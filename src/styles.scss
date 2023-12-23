@@ -1,4 +1,33 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body {
+    height: 100%;
+}
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+span {
+    caret-color: transparent;
+}
+
+.mr-16 {
+    margin-right: 16px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+// dialog-add-user add user window background
+.mdc-dialog__surface {
+    background-color: #13121A !important;
+}
+
+// dialog-add-user add user input field border color
+.mdc-notched-outline__leading,
+.mdc-notched-outline__notch,
+.mdc-notched-outline__trailing {
+    border-color: white !important;
+}
