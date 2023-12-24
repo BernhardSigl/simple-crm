@@ -4,3 +4,55 @@
     right: 56px;
     bottom: 56px;
 }
+
+mat-card {
+    background-color: #1C1A26;
+}
+
+mat-card-content {
+    padding: 0;
+
+    .user-table {
+        border-collapse: collapse;
+
+        tr {
+            &:last-child>td {
+                border-bottom: 0;
+            }
+
+            cursor: pointer;
+
+            &:first-child {
+                cursor: default;
+            }
+
+            th {
+                border-bottom: 1px solid white;
+            }
+
+            td {
+                border-bottom: 2px solid #262433;
+                height: 60px;
+            }
+
+            th,
+            td {
+                color: white;
+                text-align: start;
+                width: calc(100% / 3);
+
+                &:first-child {
+                    padding: 0 0 0 16px;
+                }
+            }
+
+            &:hover {
+                background-color: #342258;
+            }
+
+            &:first-child:hover {
+                background-color: #1C1A26;
+            }
+        }
+    }
+}

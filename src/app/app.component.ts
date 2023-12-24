@@ -5,7 +5,6 @@ import { RouterModule } from '@angular/router';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
-
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 
@@ -28,4 +27,6 @@ import { MatNativeDateModule } from '@angular/material/core';
 })
 export class AppComponent {
   title = 'simple-crm';
+  constructor() { }
+
 }

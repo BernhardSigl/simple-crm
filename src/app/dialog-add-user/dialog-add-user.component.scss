@@ -15,3 +15,12 @@ mat-label {
 input {
     color: white !important;
 }
+
+.mdc-button,
+.mdc-button__label {
+    color: white !important;
+}
+
+.mat-mdc-button:hover {
+    background-color: #673AB7;
+}
