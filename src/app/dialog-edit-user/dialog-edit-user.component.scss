@@ -1,0 +1,26 @@
+h1 {
+    color: #673AB7 !important;
+    font-weight: bold !important;
+    text-align: center;
+}
+
+mat-label {
+    color: white !important;
+}
+
+input {
+    color: white !important;
+}
+
+.mdc-button,
+.mdc-button__label {
+    color: white !important;
+}
+
+.mat-mdc-button:hover {
+    background-color: #673AB7;
+}
+
+.addNameInputs {
+    padding-top: 5px;
+}

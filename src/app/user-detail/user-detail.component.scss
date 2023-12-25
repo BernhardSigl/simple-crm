@@ -1,4 +1,40 @@
-mat-card {
+.user-detail-header {
     min-height: 400px;
     background-color: #14131a;
+    display: flex;
+    justify-content: flex-end;
+
+    mat-card-content {
+        display: flex;
+    }
+}
+
+h2 {
+    margin: 0;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.user-details-small {
+    margin-left: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.user-details-big {
+    background-color: #1C1A26;
+    color: white;
+}
+
+.edit-user-icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: white;
 }

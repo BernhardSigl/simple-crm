@@ -44,7 +44,6 @@ export class DialogAddUserComponent {
     this.loading = true;
     this.birthDate = this.currentDate;
     this.user.birthDate = this.birthDate.getTime();
-    console.log('current user', this.user);
 
     // addDoc variant:
     await addDoc(this.getUsersColRef(), this.user.toJSON()).then((result: any) => {

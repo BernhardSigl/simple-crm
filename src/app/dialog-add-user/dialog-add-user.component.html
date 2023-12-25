@@ -1,4 +1,4 @@
-<div class="addUser">
+<div>
     <mat-progress-bar *ngIf="loading" mode="indeterminate"></mat-progress-bar>
 
     <h1 mat-dialog-title>Add user</h1>
@@ -51,9 +51,10 @@
             </mat-form-field>
         </div>
 
-    </div>
-    <div mat-dialog-actions>
-        <button mat-button (click)="this.dialogRef.close()">Cancel</button>
-        <button mat-button (click)="saveUser()">Save</button>
+        <div mat-dialog-actions>
+            <button mat-button (click)="this.dialogRef.close()">Cancel</button>
+            <button mat-button (click)="saveUser()">Save</button>
+        </div>
+
     </div>
 </div>

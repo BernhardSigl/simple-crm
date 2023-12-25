@@ -33,10 +33,10 @@ export class UserComponent {
 
   constructor(public dialog: MatDialog) {
     // get fs database
-    this.subUserCol();
+    this.subUsers();
   }
 
-  subUserCol() {
+  subUsers() {
     const q = query(this.getUsersColRef());
     onSnapshot(q, (querySnapshot) => {
       this.allUsers = [];
@@ -52,15 +52,8 @@ export class UserComponent {
     return collection(this.firestore, "users");
   }
 
-  getSingleDocRef(docId: string) {
-    console.log(docId);
-
-    return doc((this.getUsersColRef()), docId);
-  }
-
   openDialog() {
     this.dialog.open(DialogAddUserComponent, {
-      // data: { name: this.name, animal: this.animal },
     });
   }
 }
